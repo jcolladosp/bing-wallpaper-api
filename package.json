@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "update-data": "tsx ./scripts/update-data.ts && prettier --write ./json/data.json"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.3",
