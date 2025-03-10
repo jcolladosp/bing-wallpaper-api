@@ -1,15 +1,21 @@
 {
-	"name": "my-hono-app",
-	"scripts": {
-		"dev": "wrangler dev",
-		"deploy": "wrangler deploy --minify",
-		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
-	},
-	"dependencies": {
-		"hono": "^4.7.4"
-	},
-	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20250310.0",
-		"wrangler": "^3.112.0"
-	}
+  "name": "my-hono-app",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "hono": "^4.7.4",
+    "ajv": "^8.11.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250310.0",
+    "@types/node": "^22.13.10",
+    "wrangler": "^3.112.0",
+    "prettier": "^3.5.3",
+    "node-fetch": "^3.2.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
 }
