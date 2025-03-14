@@ -1,4 +1,5 @@
 # bing-wallpaper-api
+
 A RESTful API for Bing wallpaper that redirects to the image directly
 
 Based on the project: https://github.com/zenghongtu/bing-wallpaper
