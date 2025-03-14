@@ -1,4 +1,4 @@
-# bing-wallpaper-api 
+# bing-wallpaper-api
 
 A RESTful API for Bing wallpaper that redirects to the image directly
 
@@ -6,9 +6,9 @@ Based on the project: https://github.com/zenghongtu/bing-wallpaper
 
 Built with Hono and deployed on Cloudflare Workers.
 
-<img width="800" src="https://bing-wallpaper-api.jcolladosp.workers.dev/?w=800"/>
+<img width="800" src="https://bing-wallpaper-api.jcolladosp.workers.dev/?width=800"/>
 
-> `<img src="https://bing-wallpaper-api.jcolladosp.workers.dev/?w=800"/>`
+> `<img src="https://bing-wallpaper-api.jcolladosp.workers.dev/?width=800"/>`
 
 ## Usage
 
@@ -52,15 +52,15 @@ The index of wallpaper, starts from 0. By default, `0` means to get today's imag
 
 Get wallpaper by date, from `20190309` to today (format is `YYYYMMDD`).
 
-#### w
+#### width
 
 The width of the wallpaper.
 
-#### h
+#### height
 
 The height of the wallpaper.
 
-#### qlt
+#### quality
 
 The quality of wallpaper, from `0` to `100`.
 
@@ -69,18 +69,18 @@ The quality of wallpaper, from `0` to `100`.
 - Request
 
 ```text
-https://bing-wallpaper-api.jcolladosp.workers.dev/?resolution=UHD&index=random&w=1000&format=json
+https://bing-wallpaper-api.jcolladosp.workers.dev/?resolution=UHD&index=random&width=1000&format=json
 ```
 
 - Response
 
 ```json
 {
-	"startdate": "20220105",
-	"copyright": "Plate-billed mountain toucan in Bellavista Cloud Forest Reserve, Ecuador (© Tui De Roy/Minden Pictures)",
-	"urlbase": "/th?id=OHR.MountainToucan_EN-US7120632569",
-	"title": "A plate-billed mountain toucan",
-	"url": "https://www.bing.com/th?id=OHR.MountainToucan_EN-US7120632569_UHD.jpg&w=1000"
+  "startdate": "20220105",
+  "copyright": "Plate-billed mountain toucan in Bellavista Cloud Forest Reserve, Ecuador (© Tui De Roy/Minden Pictures)",
+  "urlbase": "/th?id=OHR.MountainToucan_EN-US7120632569",
+  "title": "A plate-billed mountain toucan",
+  "url": "https://www.bing.com/th?id=OHR.MountainToucan_EN-US7120632569_UHD.jpg&w=1000"
 }
 ```
 
